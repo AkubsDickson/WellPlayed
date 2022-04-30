@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "images",
+			"path": "..\\..\\..\\Users\\kcqua\\Downloads\\kweku\\images"
+		},
+		{
+			"name": "Site1",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501
+	}
+}
