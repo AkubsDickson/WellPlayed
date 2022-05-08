@@ -107,7 +107,7 @@
               </div>
             </div>
             <div class="u-align-left u-container-style u-grey-15 u-list-item u-repeater-item u-list-item-2">
-              <div class="u-container-layout u-similar-container u-container-layout-2"><span class="u-custom-item u-file-icon u-icon u-text-grey-70 u-icon-2"><img src="images/1.png" alt=""></span>
+              <div class="u-container-layout u-similar-container u-container-layout-2"><span class="u-custom-item u-file-icon u-icon u-text-grey-70 u-icon-2"><img src="images/1.jpeg" alt=""></span>
                 <h3 class="u-text u-text-default u-text-3">2</h3>
                 <p class="u-text u-text-default u-text-4">Leagues</p>
               </div>
@@ -252,7 +252,7 @@
     
     
     <footer class="u-align-center-md u-align-center-sm u-align-center-xs u-clearfix u-custom-color-1 u-footer" id="sec-8325"><div class="u-clearfix u-sheet u-sheet-1">
-        <img class="u-image u-image-default u-image-1" src="images/VMQTVBTx_400x400.jpg" alt="" data-image-width="1600" data-image-height="900">
+        <img class="u-image u-image-default u-image-1" src="/images/VMQTVBTx_400x400.jpg" alt="" data-image-width="1600" data-image-height="900">
         <p class="u-align-center-lg u-align-center-md u-align-center-xl u-text u-text-1">For More Information Contact the Ashesi Football Association&nbsp;<br>at afa@ashesi.edu.gh
         </p>
         <div class="u-align-left u-social-icons u-spacing-10 u-social-icons-1">
