@@ -1,3 +1,21 @@
+
+<?php
+include "db_config.php";
+// write query for all pizzas
+$sql = 'SELECT * FROM fixtures';
+
+// make query for all fixtures
+$result = mysqli_query($conn, $sql);
+
+//fetch the results row as an array
+$fixtures = mysqli_fetch_all($result, MYSQLI_ASSOC);
+ 
+mysqli_free_result($result);
+
+?>
+
+
+
 <!DOCTYPE html>
 <html style="font-size: 16px;">
 
@@ -102,8 +120,10 @@
     </header>
     <section class="u-align-left u-clearfix u-section-1" id="sec-7c49">
         <div class="u-clearfix u-sheet u-sheet-1">
-            <h1 class="margin-bottom u-text u-text-default u-text-grey-80 u-text-1">PREMIER LEAGUE MATHCHES</h1>
-            <h2 class="u-subtitle u-text u-text-default u-text-2">14<span style="font-size: 1.875rem;">TH</span> Week
+            <h1 class="margin-bottom u-text u-text-default u-text-grey-80 u-text-1">PREMIER LEAGUE MATHCHES</h1> 
+            <h2 class="u-subtitle u-text u-text-default u-text-2"> 
+                <?php foreach($fixtures as $fixtures){ ?>
+                <?php echo ($fixtures['week']); ?><span style="font-size: 1.875rem;">TH</span> Week
             </h2>
         </div>
     </section>
@@ -121,13 +141,13 @@
             <div class="u-align-left u-container-style u-group u-group-2">
                 <div class="u-container-layout">
                     <div class="u-image u-image-circle u-image-1" alt="" data-image-width="400" data-image-height="400"></div>
-                    <h6 class="u-text u-text-white u-text-2">Northside FC</h6>
+                    <h6 class="u-text u-text-white u-text-2"><?php echo ($fixtures['T1name']); ?></h6>
                 </div>
             </div>
             <div class="u-align-left u-container-style u-group u-group-3">
                 <div class="u-container-layout">
                     <div class="u-image u-image-circle u-image-2" alt="" data-image-width="400" data-image-height="400"></div>
-                    <h6 class="u-text u-text-body-alt-color u-text-default u-text-3">Kasanoma FC</h6>
+                    <h6 class="u-text u-text-body-alt-color u-text-default u-text-3"><?php echo ($fixtures['T2name']); ?></h6>
                 </div>
             </div>
             <h6 class="u-text u-text-body-alt-color u-text-default u-text-4">VS</h6>
@@ -137,7 +157,7 @@
             <div class="u-expanded-width u-palette-2-light-1 u-radius-20 u-shape u-shape-round u-shape-2"></div>
             <div class="u-align-left u-container-style u-group u-group-4">
                 <div class="u-container-layout">
-                    <h6 class="u-text u-text-body-alt-color u-text-6">League of Legends FC</h6>
+                    <h6 class="u-text u-text-body-alt-color u-text-6"><?php echo ($fixtures['T3name']); ?></h6>
                 </div>
             </div>
             <div class="u-align-left u-container-style u-group u-group-5">
@@ -186,6 +206,7 @@
                 </div>
             </div>
         </div>
+        <?php }?>
     </section>
 
     <footer class="u-align-center-md u-align-center-sm u-align-center-xs u-clearfix u-custom-color-1 u-footer" id="sec-8325">
